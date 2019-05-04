@@ -434,7 +434,7 @@ module.exports = (() => {
             logger.info('Generating output files...');
             publishPromise = template.publish(
                 taffy(props.docs),
-                env.opts,
+                env,
                 resolver.root
             );
 
